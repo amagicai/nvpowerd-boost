@@ -1,7 +1,8 @@
 # nvpowerd-boost
 
 An `LD_PRELOAD` interposer for `nvidia-powerd` that lets you raise the
-Dynamic Boost ceiling on NVIDIA laptops **without** reflashing the VBIOS.
+Dynamic Boost ceiling on NVIDIA laptops once you have patched your VBIOS to
+allow a higher power limit.
 
 `nvidia-powerd` asks the NVIDIA kernel driver for the platform power tables and
 applies `base TGP + dynamic-boost delta` as the GPU power limit. This library
